@@ -36,6 +36,7 @@ const PatientInformationSection: React.FC<PatientInformationSectionProps> = ({
                     <label htmlFor="name" className="block mb-2">Birthyear</label>
                     <input
                         type="date"
+                        max={new Date().toISOString().split("T")[0]}
                         name="birthDate"
                         value={patientData.birthDate}
                         onChange={handleChange}

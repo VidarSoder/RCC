@@ -31,6 +31,7 @@ const WellbeingSection: React.FC<WellbeingSectionProps> = ({
                     <div key={index} className="grid grid-cols-1 md:grid-cols-3 gap-4 items-end">
                         <input
                             type="date"
+                            max={new Date().toISOString().split("T")[0]}
                             name="date"
                             value={record.date}
                             onChange={(e) => handleChange(e, index)}

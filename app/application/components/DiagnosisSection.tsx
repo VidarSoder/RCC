@@ -18,6 +18,7 @@ const DiagnosisSection: React.FC<DiagnosisSectionProps> = ({
                     <label htmlFor="diagnosisDate" className="block mb-2">Diagnosis Date:</label>
                     <input
                         type="date"
+                        max={new Date().toISOString().split("T")[0]}
                         id="diagnosisDate"
                         name="date"
                         value={diagnosis.date}

@@ -43,5 +43,6 @@ export type ValidationErrors = {
     }>;
     patientInfo: {
         name?: string;
+        date?: string;
     };
 };

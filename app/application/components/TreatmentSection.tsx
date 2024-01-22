@@ -33,6 +33,7 @@ const TreatmentsSection: React.FC<TreatmentsSectionProps> = ({
                         <label htmlFor={`treatmentDate-${index}`} className="block mb-2">Treatment Date:</label>
                         <input
                             type="date"
+                            max={new Date().toISOString().split("T")[0]}
                             id={`treatmentDate-${index}`}
                             name="date"
                             value={treatment.date}
