@@ -114,7 +114,7 @@ export default function FormPage() {
                         Canceranmälan
                     </button>
                 </div>
-                <div className="bg-white p-6 rounded shadow-lg mt-4" style={{ height: '1000px', overflowY: 'auto' }}>
+                <div className="bg-white p-6 rounded shadow-lg mt-4" style={{ height: '100%', overflowY: 'auto' }}>
                     {activeTab === 'form' ? (
                         <form onSubmit={handleSubmit} className="bg-white p-6 rounded shadow-lg space-y-8 max-w-4xl w-full">
                             <h1 className="text-2xl font-bold text-center mb-6">Patient Data Form</h1>
